@@ -67,6 +67,7 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
         //config.setAllowedOrigins(List.of("*"));
 //        config.setAllowedOriginPatterns(List.of("*"));
+        //esta es la ruta que puede hacer peticiones
        config.setAllowedOrigins(List.of("http://localhost:5173/"));
         //config.setAllowedOriginPatterns(Arrays.asList("http://192.168.100.108:3000", "http://*"));
         config.setAllowedMethods(Arrays.asList("GET","POST","PUT","DELETE","OPTIONS"));
