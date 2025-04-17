@@ -35,7 +35,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST,"/api/productos/**").hasAnyAuthority("ADMIN")
                         .requestMatchers(HttpMethod.POST,"/api/precios/**").hasAnyAuthority("ADMIN")
                         .requestMatchers(HttpMethod.GET,"/api/precios/**").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.PUT,"/api//productos/change-state").hasAnyAuthority("ADMIN")
+                        .requestMatchers(HttpMethod.PUT,"/api/productos/change-state").hasAnyAuthority("ADMIN")
                         //.requestMatchers(HttpMethod.GET,"/api//users").hasAnyAuthority("ADMIN")
 
                         .requestMatchers(HttpMethod.GET, "/images/productos/**").permitAll()

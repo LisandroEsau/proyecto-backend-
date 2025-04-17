@@ -22,8 +22,7 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 //firma del token
-    @Value("${api.security.secret}")
-    private String secretKey;
+private static final String SECRET_KEY = "586E3272357538782F413F4428472B4B6250655368566B597033733676397924";
 
     @Autowired
     private UserRepository userRepository;
@@ -48,7 +47,7 @@ public class JwtService {
 
     }
     private Key getKey() {
-        byte[] keyBytes = Decoders.BASE64.decode(secretKey);
+        byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY);
         return Keys.hmacShaKeyFor(keyBytes);
     }
 
