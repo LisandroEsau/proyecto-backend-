@@ -17,7 +17,7 @@ import java.time.LocalDate;
 @Data
 //Dando estereotipo de Entidad
 @Entity
-@Table(name = "inventario",schema = "public",catalog = "pasteleria_emanuel")
+@Table(name = "inventario",schema = "public",catalog = "railway")
 public class Inventario implements Serializable{
     @Id
     @Column(name = "id",nullable = false)

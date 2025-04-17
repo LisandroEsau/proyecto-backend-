@@ -17,7 +17,7 @@ import java.io.Serializable;
 //Dando estereotipo de Entidad
 @Entity
 //Definiendo la tabla, con su nombre n catalogo y esquema
-@Table(name = "ordenes_productos", schema = "public", catalog = "pasteleria_emanuel")
+@Table(name = "ordenes_productos", schema = "public", catalog = "railway")
 public class OrdenProducto implements Serializable {
     //definiendo atributos de la entidad
     @Id

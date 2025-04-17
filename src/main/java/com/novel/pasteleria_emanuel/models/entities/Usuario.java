@@ -23,7 +23,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Builder
-@Table(name = "usuarios", schema = "public",catalog = "pasteleria_emanuel")
+@Table(name = "usuarios", schema = "public",catalog = "railway")
 public class Usuario implements Serializable, UserDetails {
     @Id
     @Column(name = "id",nullable = false)
