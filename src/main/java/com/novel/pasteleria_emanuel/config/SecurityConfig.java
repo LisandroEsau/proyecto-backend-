@@ -51,7 +51,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST,"/api/categorias/**").hasAuthority("ADMIN")
                         .requestMatchers(HttpMethod.DELETE,"/api/categorias/**").hasAuthority("ADMIN")
 
-                        .requestMatchers(HttpMethod.POST,"/api/ordenes/**").hasAuthority("USER")
+                        .requestMatchers(HttpMethod.POST,"/api/ordenes/**").hasAuthority("ADMIN")
 
                         .anyRequest().hasAnyAuthority("ADMIN")
                 ).cors(cors -> cors.configurationSource(corsConfigurationSource()))
